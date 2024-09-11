@@ -77,10 +77,11 @@
           document.querySelector(".error").style.display = "none";
         }
       }
-
+    
       searchBtn.addEventListener("click", () => {
         cheakWeather(searchBox.value);
       });
+
        // Event listener for the "Enter" key
        searchBox.addEventListener("keyup", (event) => {
         if (event.key === "Enter") {
