@@ -81,6 +81,12 @@
       searchBtn.addEventListener("click", () => {
         cheakWeather(searchBox.value);
       });
+       // Event listener for the "Enter" key
+       searchBox.addEventListener("keyup", (event) => {
+        if (event.key === "Enter") {
+          cheakWeather(searchBox.value);
+        }
+        });
     </script>
   </body>
 </html>
